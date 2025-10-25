@@ -525,7 +525,7 @@ header img {
             <span className="badge">✅ Livraison Rapide France</span>
           </div>
 
-          <img src="/lotbijux1.jpg" alt="Lot de bijoux créateurs français" />
+          <img src="/c3afcc51-2e35-4c97-a9fe-ddfb1a66dd76.jpg" alt="Cliente satisfaite portant un collier" />
         </section>
 
         {/* SECTION 2 : PROBLÈME */}
@@ -623,7 +623,7 @@ header img {
             <p className="testimonial-author">— Sophie, vendeuse marché de Noël - Rennes</p>
           </div>
 
-          <img src="/c3afcc51-2e35-4c97-a9fe-ddfb1a66dd76.jpg" alt="Cliente satisfaite portant un collier" className="bijoux-image" />
+
 
           <div className="testimonial">
             <p>"Enfin un fournisseur qui comprend nos contraintes. Lot varié, marge correcte, qualité au top."</p>
@@ -639,7 +639,7 @@ header img {
 
           <img src="/f3ff2af4-aaa6-4c02-bfb1-a25cb0d2e9f8.jpg" alt="Cliente heureuse avec collier ancre" className="bijoux-image" />
 
-          <h3 style={{ marginTop: '40px' }}>🏢 SOLUSTOC SAS - FOURNISSEUR OFFICIEL</h3>
+          <h3 style={{ marginTop: '40px' }}>🏢 Les Bijoux de créateurs Français by Solustoc</h3>
           <p>→ SIRET : <strong>943 702 126 00013</strong><br/>
           → Basé en France (Bretagne)<br/>
           → Spécialiste bijoux créateurs depuis 2025<br/>
@@ -691,6 +691,8 @@ header img {
             <p className="faq-question">Q : "Vous fournissez les étiquettes prix ?"</p>
             <p className="faq-answer">R : Nous vous envoyons un document avec les prix publics conseillés + codes références pour votre gestion de stock.</p>
           </div>
+
+          <img src="/lotbijux1.jpg" alt="Lot complet de bijoux créateurs français" className="bijoux-image" style={{ marginTop: '40px' }} />
         </section>
 
         {/* SECTION 7 : URGENCE */}
@@ -763,7 +765,7 @@ header img {
 
             <p style={{ fontSize: '17px', marginTop: '25px' }}>
               <strong>OU par email :</strong><br/>
-              📧 contact@solustoc.fr
+              📧 contact@lesbijouxfrancais.fr
             </p>
           </div>
         </section>
@@ -776,12 +778,16 @@ header img {
           
           <div style={{ margin: '30px 0', borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '20px' }}>
             <p><strong>CONTACT</strong></p>
-            <p>📧 contact@solustoc.fr</p>
+            <p>📧 contact@lesbijouxfrancais.fr</p>
             <p>📍 69 Bis Rue du Bêle, 44300 Nantes</p>
           </div>
 
           <div style={{ marginTop: '30px', borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '20px', fontSize: '14px' }}>
-            <p>© 2025 Les Bijoux Français - Une sélection par Solustoc SAS</p>
+            <p>
+              <a href="https://lesbijouxfrancais.fr/mentions-legales" style={{ color: '#D4AF37', textDecoration: 'none', margin: '0 10px' }}>Mentions légales</a> | 
+              <a href="https://lesbijouxfrancais.fr/politique-de-confidentialite" style={{ color: '#D4AF37', textDecoration: 'none', margin: '0 10px' }}>Politique de confidentialité</a>
+            </p>
+            <p style={{ marginTop: '15px' }}>© 2025 Les Bijoux Français - Une sélection par Solustoc SAS</p>
             <p>SIRET : 943 702 126 00013 | TVA : FR79943702126</p>
           </div>
         </footer>

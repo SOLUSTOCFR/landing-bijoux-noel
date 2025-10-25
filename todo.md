@@ -19,3 +19,12 @@
 - [x] Vérifier tous les espacements réduits
 - [x] Tester la page complète
 
+
+
+## Modifications demandées par le client
+
+- [x] Ajouter liens Mentions légales et Politique de confidentialité dans le footer
+- [x] Remplacer "contact@solustoc.fr" par "contact@lesbijouxfrancais.fr"
+- [x] Remplacer "SOLUSTOC SAS - FOURNISSEUR OFFICIEL" par "Les Bijoux de créateurs Français by Solustoc"
+- [x] Inverser photo 1 et photo 2 (photo 2 en hero, photo 1 après FAQ)
+
