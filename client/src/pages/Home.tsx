@@ -51,6 +51,7 @@ h1 {
     margin-bottom: 20px !important;
     margin-top: 0 !important;
     line-height: 1.3;
+    text-align: center;
 }
 
 h2 {

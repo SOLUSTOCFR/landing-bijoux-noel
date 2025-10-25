@@ -66,3 +66,9 @@
 - [x] Agrandir texte descriptif à 18px
 - [x] Réduire padding header à 5px
 
+
+
+## Centrage titre H1
+
+- [x] Centrer le titre H1 "LOT NOËL 2025 : 350 Bijoux de Créateurs Français"
+
