@@ -28,3 +28,12 @@
 - [x] Remplacer "SOLUSTOC SAS - FOURNISSEUR OFFICIEL" par "Les Bijoux de créateurs Français by Solustoc"
 - [x] Inverser photo 1 et photo 2 (photo 2 en hero, photo 1 après FAQ)
 
+
+
+## Nouvelles modifications demandées
+
+- [x] Réduire la hauteur du header avec logo (prend trop de place)
+- [x] Réduire taille police du H1 pour tenir sur 2 lignes
+- [x] Changer 341 bijoux en 350 bijoux
+- [x] Changer 38 pièces en 47 pièces pour les médailles
+

@@ -45,12 +45,12 @@ p {
 /* TITRES : Espacement contrôlé */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 800;
     color: #1a1a1a;
     margin-bottom: 20px !important;
     margin-top: 0 !important;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 h2 {
@@ -328,13 +328,13 @@ footer a:hover {
 
 header {
     background: #FFFFFF;
-    padding: 20px 5%;
+    padding: 15px 5%;
     text-align: center;
     border-bottom: 2px solid #F8F6F0;
 }
 
 header img {
-    max-width: 250px;
+    max-width: 200px;
     margin: 0 auto;
     box-shadow: none;
 }
@@ -418,7 +418,7 @@ header img {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
         line-height: 1.3 !important;
     }
     
@@ -453,7 +453,11 @@ header img {
     }
     
     header img {
-        max-width: 180px;
+        max-width: 150px;
+    }
+    
+    header {
+        padding: 12px 4% !important;
     }
     
     .badges {
@@ -508,7 +512,7 @@ header img {
 
         {/* SECTION 1 : HERO */}
         <section className="hero-section">
-          <h1>🎄 LOT NOËL 2025 : 341 Bijoux de Créateurs Français<br/>Marges Exceptionnelles pour Revendeurs Exigeants</h1>
+          <h1>🎄 LOT NOËL 2025 : 350 Bijoux de Créateurs Français<br/>Marges Exceptionnelles pour Revendeurs Exigeants</h1>
           
           <p style={{ fontSize: '20px', fontWeight: 600 }}>
             Vous en avez marre des bijoux fantaisie de mauvaise qualité ?<br/>
@@ -553,7 +557,7 @@ header img {
           <h2>🎁 Ce que vous recevez exactement</h2>
           
           <p style={{ fontSize: '20px', fontWeight: 600 }}>
-            Un lot complet de <strong>341 bijoux de créateurs français</strong>, prêt à vendre :
+            Un lot complet de <strong>350 bijoux de créateurs français</strong>, prêt à vendre :
           </p>
 
           <h3>📦 59 RÉFÉRENCES DIFFÉRENTES</h3>
@@ -564,7 +568,7 @@ header img {
 
           <h3>🏆 CATÉGORIES BEST-SELLERS</h3>
           <ul style={{ fontSize: '18px' }}>
-            <li>Médailles tendance (symboles, pompons, pampilles) : 38 pièces</li>
+            <li>Médailles tendance (symboles, pompons, pampilles) : 47 pièces</li>
             <li>Boucles d'oreilles créoles & studs : 5 pièces</li>
             <li>Cordons dorés : 6 pièces</li>
             <li>Bagues anneaux : 4 pièces</li>
@@ -663,7 +667,7 @@ header img {
           </div>
 
           <div className="faq-item">
-            <p className="faq-question">Q : "341 pièces c'est trop pour moi"</p>
+            <p className="faq-question">Q : "350 pièces c'est trop pour moi"</p>
             <p className="faq-answer">R : C'est exactement la quantité idéale pour un marché de Noël rentable (3-4 weekends) ou pour alimenter une petite boutique pendant 2 mois. Vous ne serez pas en rupture.</p>
           </div>
 
@@ -723,7 +727,7 @@ header img {
           <h2>🎁 Prêt à Booster Vos Ventes de Fin d'Année ?</h2>
           
           <p style={{ fontSize: '22px', margin: '20px 0' }}>
-            341 bijoux créateurs français • Marge 90% • Livraison 48-72h
+            350 bijoux créateurs français • Marge 90% • Livraison 48-72h
           </p>
           
           <p style={{ fontSize: '28px', fontWeight: 800, margin: '25px 0' }}>
