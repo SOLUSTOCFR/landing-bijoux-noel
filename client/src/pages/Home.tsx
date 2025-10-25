@@ -328,19 +328,19 @@ footer a:hover {
 
 header {
     background: #FFFFFF;
-    padding: 8px 5%;
+    padding: 5px 5%;
     text-align: center;
     border-bottom: 2px solid #F8F6F0;
 }
 
 header img {
-    max-width: 200px;
+    max-width: 150px;
     margin: 0 auto 8px auto;
     box-shadow: none;
 }
 
 header p {
-    font-size: 14px;
+    font-size: 18px;
     color: #555;
     line-height: 1.5;
     margin: 0;
@@ -463,15 +463,15 @@ header p {
     }
     
     header img {
-        max-width: 150px;
+        max-width: 120px;
     }
     
     header {
-        padding: 6px 4% !important;
+        padding: 4px 4% !important;
     }
     
     header p {
-        font-size: 13px !important;
+        font-size: 15px !important;
     }
     
     .badges {

@@ -45,3 +45,24 @@
 - [x] Ajouter texte descriptif sous le logo dans le header
 - [x] Remplacer "Basé en France (Bretagne)" par "Basé dans le bassin nantais"
 
+
+
+## Corrections header
+
+- [x] Réduire le logo à 150px pour diminuer la hauteur du header
+- [x] Agrandir la police du texte descriptif à 16px
+
+
+
+## Ajustements finaux header
+
+- [x] Agrandir texte descriptif à 18px
+- [x] Réduire padding header à 5px
+
+
+
+## Ajustements finaux header
+
+- [x] Agrandir texte descriptif à 18px
+- [x] Réduire padding header à 5px
+
