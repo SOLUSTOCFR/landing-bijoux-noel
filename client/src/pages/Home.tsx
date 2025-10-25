@@ -328,15 +328,25 @@ footer a:hover {
 
 header {
     background: #FFFFFF;
-    padding: 15px 5%;
+    padding: 8px 5%;
     text-align: center;
     border-bottom: 2px solid #F8F6F0;
 }
 
 header img {
     max-width: 200px;
-    margin: 0 auto;
+    margin: 0 auto 8px auto;
     box-shadow: none;
+}
+
+header p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ============================================
@@ -457,7 +467,11 @@ header img {
     }
     
     header {
-        padding: 12px 4% !important;
+        padding: 6px 4% !important;
+    }
+    
+    header p {
+        font-size: 13px !important;
     }
     
     .badges {
@@ -508,6 +522,7 @@ header img {
         {/* HEADER */}
         <header>
           <img src="/logo.png" alt="Les Bijoux Français" />
+          <p>Découvrez nos créations artisanales françaises en acier inoxydable avec finition dorée durable. Chaque bijou est sélectionné pour sa qualité, son style et son prix ultra accessible</p>
         </header>
 
         {/* SECTION 1 : HERO */}
@@ -645,7 +660,7 @@ header img {
 
           <h3 style={{ marginTop: '40px' }}>🏢 Les Bijoux de créateurs Français by Solustoc</h3>
           <p>→ SIRET : <strong>943 702 126 00013</strong><br/>
-          → Basé en France (Bretagne)<br/>
+          → Basé dans le bassin nantais<br/>
           → Spécialiste bijoux créateurs depuis 2025<br/>
           → Des centaines de revendeurs satisfaits</p>
 

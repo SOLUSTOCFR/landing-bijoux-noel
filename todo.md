@@ -37,3 +37,11 @@
 - [x] Changer 341 bijoux en 350 bijoux
 - [x] Changer 38 pièces en 47 pièces pour les médailles
 
+
+
+## Modifications supplémentaires
+
+- [x] Réduire encore le header de moitié (padding divisé par 2)
+- [x] Ajouter texte descriptif sous le logo dans le header
+- [x] Remplacer "Basé en France (Bretagne)" par "Basé dans le bassin nantais"
+
