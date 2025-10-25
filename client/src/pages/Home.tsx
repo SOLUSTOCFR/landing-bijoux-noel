@@ -530,7 +530,7 @@ header p {
         <section className="hero-section">
           <h1>🎄 LOT NOËL 2025 : 350 Bijoux de Créateurs Français<br/>Marges Exceptionnelles pour Revendeurs Exigeants</h1>
           
-          <p style={{ fontSize: '20px', fontWeight: 600 }}>
+          <p style={{ fontSize: '20px', fontWeight: 600, textAlign: 'center' }}>
             Vous en avez marre des bijoux fantaisie de mauvaise qualité ?<br/>
             Découvrez des créations françaises qui se vendent seules.
           </p>

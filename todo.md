@@ -72,3 +72,9 @@
 
 - [x] Centrer le titre H1 "LOT NOËL 2025 : 350 Bijoux de Créateurs Français"
 
+
+
+## Centrage sous-titre hero
+
+- [x] Centrer la phrase "Vous en avez marre des bijoux fantaisie de mauvaise qualité ?"
+
