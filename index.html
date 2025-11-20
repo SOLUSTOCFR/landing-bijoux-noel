@@ -763,6 +763,89 @@ header p {
     .dot-showcase.active {
         background: white;
     }
+
+    /* Carousel Review */
+    .carousel-container-review {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .carousel-review {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-slide-review {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-slide-review img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide-review.active {
+        display: block;
+    }
+
+    .carousel-btn-review {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.8);
+        color: #333;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn-review:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    .carousel-btn-review.prev {
+        left: 10px;
+    }
+
+    .carousel-btn-review.next {
+        right: 10px;
+    }
+
+    .carousel-dots-review {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot-review {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-review.active {
+        background: white;
+    }
     </style>
 </head>
 <body>
@@ -1010,7 +1093,38 @@ header p {
             <p class="testimonial-author">— Marc D., solderie - Lyon</p>
         </div>
 
-        <img src="3f98404e-a9a3-4261-8c6a-7f10e93a79e6.jpg" alt="Revendeuse avec collier médaille" class="bijoux-image">
+        <div class="carousel-container-review">
+            <div class="carousel-review">
+                <div class="carousel-slide-review active">
+                    <img src="review-collier-pompon-corail.jpg" alt="Collier Pompon Corail">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-eye.jpg" alt="Collier Eye">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-papillon.jpg" alt="Collier Papillon">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-chance.jpg" alt="Collier Chance">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-coccinelle.jpg" alt="Collier Coccinelle">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-astre.jpg" alt="Collier Astre">
+                </div>
+                <button class="carousel-btn-review prev" onclick="changeSlideReview(-1)">❮</button>
+                <button class="carousel-btn-review next" onclick="changeSlideReview(1)">❯</button>
+            </div>
+            <div class="carousel-dots-review">
+                <span class="dot-review" onclick="currentSlideReview(0)"></span>
+                <span class="dot-review" onclick="currentSlideReview(1)"></span>
+                <span class="dot-review" onclick="currentSlideReview(2)"></span>
+                <span class="dot-review" onclick="currentSlideReview(3)"></span>
+                <span class="dot-review" onclick="currentSlideReview(4)"></span>
+                <span class="dot-review" onclick="currentSlideReview(5)"></span>
+            </div>
+        </div>
 
         <div class="testimonial">
             <p>"Première commande testée en septembre, je viens d'en reprendre 2 lots pour Noël. Les bijoux 'français' ça parle vraiment à ma clientèle. Attention par contre, faut savoir les mettre en valeur sur le stand."</p>
@@ -1327,6 +1441,38 @@ header p {
 
     // Initialize carousel showcase
     showSlideShowcase(0);
+
+    // Carousel Review Functions
+    let currentSlideIndexReview = 0;
+
+    function changeSlideReview(n) {
+        showSlideReview(currentSlideIndexReview += n);
+    }
+
+    function currentSlideReview(n) {
+        showSlideReview(currentSlideIndexReview = n);
+    }
+
+    function showSlideReview(n) {
+        const slides = document.querySelectorAll('.carousel-slide-review');
+        const dots = document.querySelectorAll('.dot-review');
+        
+        if (n >= slides.length) {
+            currentSlideIndexReview = 0;
+        }
+        if (n < 0) {
+            currentSlideIndexReview = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndexReview].classList.add('active');
+        dots[currentSlideIndexReview].classList.add('active');
+    }
+
+    // Initialize carousel review
+    showSlideReview(0);
     </script>
 </body>
 </html>
