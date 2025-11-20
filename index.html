@@ -680,6 +680,89 @@ header p {
     .dot-etalage.active {
         background: white;
     }
+
+    /* Carousel Showcase */
+    .carousel-container-showcase {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .carousel-showcase {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-slide-showcase {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-slide-showcase img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide-showcase.active {
+        display: block;
+    }
+
+    .carousel-btn-showcase {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.8);
+        color: #333;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn-showcase:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    .carousel-btn-showcase.prev {
+        left: 10px;
+    }
+
+    .carousel-btn-showcase.next {
+        right: 10px;
+    }
+
+    .carousel-dots-showcase {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot-showcase {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-showcase.active {
+        background: white;
+    }
     </style>
 </head>
 <body>
@@ -823,16 +906,63 @@ header p {
             Nous avons surpondéré les Médailles Initiales (131 pièces) car ce sont les <strong>best-sellers qui garantissent le retour sur investissement le plus rapide</strong>. Elles se vendent en priorité et permettent de rentabiliser rapidement votre investissement. La variété des autres catégories complète l'offre pour satisfaire tous les types de clients.
         </p>
 
-        <img src="a84f9730-f6a4-4513-a470-9373d819609f.jpg" alt="Boucles d'oreilles créoles dorées" class="bijoux-image">
-        <img src="118080fe-c0ed-4760-951c-f400400a133e.jpg" alt="Bracelet et boucles d'oreilles" class="bijoux-image">
+        <div class="carousel-container-showcase">
+            <div class="carousel-showcase">
+                <div class="carousel-slide-showcase active">
+                    <img src="collier-pompon.jpg" alt="Collier Pompon Pink">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-sweat.jpg" alt="Collier Sweat">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-merci.jpg" alt="Collier Merci">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-colombe.jpg" alt="Collier Colombe">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-lucky.jpg" alt="Collier Lucky">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="petit-ange.jpg" alt="Petit Ange">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="bracelet-couronne.jpg" alt="Bracelet Couronne">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-monbebe.jpg" alt="Collier Mon Bébé">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-love.jpg" alt="Collier Love">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="bracelet-main.jpg" alt="Bracelet Main">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-rose.jpg" alt="Collier Rose">
+                </div>
+                <button class="carousel-btn-showcase prev" onclick="changeSlideShowcase(-1)">❮</button>
+                <button class="carousel-btn-showcase next" onclick="changeSlideShowcase(1)">❯</button>
+            </div>
+            <div class="carousel-dots-showcase">
+                <span class="dot-showcase" onclick="currentSlideShowcase(0)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(1)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(2)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(3)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(4)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(5)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(6)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(7)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(8)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(9)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(10)"></span>
+            </div>
+        </div>
 
         <h3>💎 QUALITÉ CRÉATEUR FRANÇAIS</h3>
         <p>→ Marque : <strong>Les Bijoux de Mimi</strong> (Arcachon)<br/>
         → Acier inoxydable doré or fin (tenue longue durée)<br/>
-        → Finitions soignées, pas de "made in china" cheap</p>
-
-        <img src="52ec8597-78ce-4fc5-b4c3-e558e192cba1.jpg" alt="Médaille gravée Je t'aime" class="bijoux-image">
-        <img src="09a9b026-dcf5-4b5c-b8b0-1d9242a0a2af.jpg" alt="Bague étoile dorée" class="bijoux-image">
+        → Finitions soignées et durables, créations de qualité premium</p>
     </section>
 
     <!-- SECTION 4 : CALCUL MARGE -->
@@ -1165,6 +1295,38 @@ header p {
 
     // Initialize carousel etalage
     showSlideEtalage(0);
+
+    // Carousel Showcase Functions
+    let currentSlideIndexShowcase = 0;
+
+    function changeSlideShowcase(n) {
+        showSlideShowcase(currentSlideIndexShowcase += n);
+    }
+
+    function currentSlideShowcase(n) {
+        showSlideShowcase(currentSlideIndexShowcase = n);
+    }
+
+    function showSlideShowcase(n) {
+        const slides = document.querySelectorAll('.carousel-slide-showcase');
+        const dots = document.querySelectorAll('.dot-showcase');
+        
+        if (n >= slides.length) {
+            currentSlideIndexShowcase = 0;
+        }
+        if (n < 0) {
+            currentSlideIndexShowcase = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndexShowcase].classList.add('active');
+        dots[currentSlideIndexShowcase].classList.add('active');
+    }
+
+    // Initialize carousel showcase
+    showSlideShowcase(0);
     </script>
 </body>
 </html>
