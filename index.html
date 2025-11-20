@@ -599,6 +599,87 @@ header p {
     .dot.active {
         background: white;
     }
+
+    /* CAROUSEL ETALAGE STYLES */
+    .carousel-container-etalage {
+        position: relative;
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .carousel-etalage {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-slide-etalage {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide-etalage.active {
+        display: block;
+    }
+
+    .carousel-btn-etalage {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(212,175,55,0.8);
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn-etalage:hover {
+        background: rgba(212,175,55,1);
+    }
+
+    .carousel-btn-etalage.prev {
+        left: 10px;
+    }
+
+    .carousel-btn-etalage.next {
+        right: 10px;
+    }
+
+    .carousel-dots-etalage {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot-etalage {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-etalage.active {
+        background: white;
+    }
     </style>
 </head>
 <body>
@@ -682,7 +763,23 @@ header p {
         <p>→ Variété maximale pour plaire à tous vos clients<br/>
         → Pas de stock mort : chaque pièce a son acheteur</p>
 
-        <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="bijoux-image">
+        <!-- CAROUSEL ETALAGE -->
+        <div class="carousel-container-etalage">
+            <div class="carousel-etalage">
+                <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
+                <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
+                <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
+                <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
+            </div>
+            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
+            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
+            <div class="carousel-dots-etalage">
+                <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
+            </div>
+        </div>
 
         <h3 style="text-align: center;">📋 COMPOSITION DÉTAILLÉE (370 PIÈCES)</h3>
         
@@ -1036,6 +1133,38 @@ header p {
 
     // Initialize carousel
     showSlide(0);
+
+    // CAROUSEL ETALAGE FUNCTIONS
+    let currentSlideIndexEtalage = 0;
+
+    function moveSlideEtalage(n) {
+        showSlideEtalage(currentSlideIndexEtalage += n);
+    }
+
+    function currentSlideEtalage(n) {
+        showSlideEtalage(currentSlideIndexEtalage = n);
+    }
+
+    function showSlideEtalage(n) {
+        const slides = document.querySelectorAll('.carousel-slide-etalage');
+        const dots = document.querySelectorAll('.dot-etalage');
+        
+        if (n >= slides.length) {
+            currentSlideIndexEtalage = 0;
+        }
+        if (n < 0) {
+            currentSlideIndexEtalage = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndexEtalage].classList.add('active');
+        dots[currentSlideIndexEtalage].classList.add('active');
+    }
+
+    // Initialize carousel etalage
+    showSlideEtalage(0);
     </script>
 </body>
 </html>
