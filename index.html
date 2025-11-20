@@ -568,6 +568,69 @@ header p {
     }
 }
 
+/* ZOOM LIGHTBOX STYLES */
+.zoom-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+}
+
+.zoom-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.zoom-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.zoom-modal-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
     /* CAROUSEL STYLES */
     .carousel-container {
         position: relative;
@@ -1284,6 +1347,14 @@ header p {
         </div>
     </footer>
 
+    <!-- ZOOM MODAL -->
+    <div id="zoomModal" class="zoom-modal">
+        <div class="zoom-modal-content">
+            <button class="zoom-modal-close" onclick="closeZoom()">&times;</button>
+            <img id="zoomImage" src="" alt="Image zoomée">
+        </div>
+    </div>
+
     <script>
     // Donnees de clients fictifs pour les notifications (credibles : 1 ou 2 lots max)
     const clients = [
@@ -1472,6 +1543,64 @@ header p {
                 
                 item.classList.toggle('open');
             });
+        });
+    });
+
+    // ZOOM FUNCTIONS
+    function zoomImage(img) {
+        const modal = document.getElementById('zoomModal');
+        const zoomImg = document.getElementById('zoomImage');
+        zoomImg.src = img.src;
+        modal.classList.add('active');
+    }
+
+    function closeZoom() {
+        const modal = document.getElementById('zoomModal');
+        modal.classList.remove('active');
+    }
+
+    // Fermer la modale au clic en dehors de l'image
+    document.getElementById('zoomModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeZoom();
+        }
+    });
+
+    // Fermer la modale avec la touche Échap
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeZoom();
+        }
+    });
+
+    // Ajouter le zoom à toutes les images
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            // Ne pas ajouter le zoom aux images de carrousel (elles ont déjà des classes spéciales)
+            if (!img.classList.contains('carousel-slide') && 
+                !img.classList.contains('carousel-slide-etalage') && 
+                !img.classList.contains('carousel-slide-showcase') && 
+                !img.classList.contains('carousel-slide-review') &&
+                img.src && img.src.trim() !== '') {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    zoomImage(this);
+                });
+            }
+        });
+
+        // Ajouter le zoom aux images de carrousel
+        const carouselImages = document.querySelectorAll('.carousel-slide, .carousel-slide-etalage, .carousel-slide-showcase, .carousel-slide-review');
+        carouselImages.forEach(img => {
+            if (img.src && img.src.trim() !== '') {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    zoomImage(this);
+                });
+            }
         });
     });
     </script>
