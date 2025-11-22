@@ -631,41 +631,6 @@ header p {
     to { opacity: 1; }
 }
 
-/* FLOATING WHATSAPP BUTTON */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    transition: all 0.3s ease;
-    z-index: 999;
-    text-decoration: none;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
-}
-
-@media (max-width: 768px) {
-    .whatsapp-float {
-        bottom: 15px;
-        right: 15px;
-        width: 55px;
-        height: 55px;
-        font-size: 28px;
-    }
-}
-
     /* CAROUSEL STYLES */
     .carousel-container {
         position: relative;
@@ -1018,64 +983,11 @@ header p {
 
     <!-- SECTION 1 : HERO -->
     <section class="hero-section">
-        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 16px; margin-top: 0;">Gagnez +3 597€ avant Noël : Le Lot Clé en Main de 370 Bijoux Créateurs à Marge</h1>
+        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 20px; margin-top: 0;">370 Bijoux Créateurs Français – +88% de marge immédiate</h1>
         
         <p style="font-size: 16px; color: #555555; text-align: center; margin-bottom: 24px; line-height: 1.5;">Lot prêt à vendre pour marchés, boutiques, vide-greniers et pop-ups.</p>
         
-        <!-- BLOC PRIX ET PROMESSE -->
-        <div style="background: linear-gradient(135deg, #FFF9E6 0%, #FFFAED 100%); border: 2px solid #C9A56B; border-radius: 12px; padding: 20px; margin: 20px auto; max-width: 600px; text-align: center;">
-            <p style="font-size: 24px; font-weight: 700; color: #C9A56B; margin: 0 0 8px 0;">💰 480€ TTC</p>
-            <p style="font-size: 14px; color: #333333; margin: 0 0 12px 0; line-height: 1.5;">
-                ✔️ Livraison incluse<br/>
-                ✔️ 370 pièces (~1,29€/pièce)<br/>
-                📦 Stock réel – Déstockage créatrice française (Arcachon)
-            </p>
-        </div>
-        
-        <!-- BLOC RENTABILITÉ -->
-        <div style="background: #FFFFFF; border-left: 5px solid #C9A56B; padding: 16px; margin: 20px auto; max-width: 600px;">
-            <p style="font-size: 14px; font-weight: 700; color: #333333; margin: 0 0 12px 0;">Pourquoi c'est rentable ?</p>
-            <p style="font-size: 13px; color: #555555; margin: 6px 0; line-height: 1.4;">💸 Coût unitaire : 1,29€</p>
-            <p style="font-size: 13px; color: #555555; margin: 6px 0; line-height: 1.4;">💵 Revente conseillée : 5 à 10€</p>
-            <p style="font-size: 13px; color: #C9A56B; margin: 6px 0; font-weight: 600; line-height: 1.4;">🌟 Bénéfice possible : 1 850€ à 3 700€</p>
-            <p style="font-size: 13px; color: #C9A56B; margin: 6px 0; font-weight: 600; line-height: 1.4;">📈 Marge brute : 88%</p>
-        </div>
-        
-        <!-- CAROUSEL ETALAGE (LOT) - PREMIER -->
-        <div class="carousel-container-etalage">
-            <div class="carousel-etalage">
-                <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
-                <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
-                <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
-                <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
-            </div>
-            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
-            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
-            <div class="carousel-dots-etalage">
-                <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
-                <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
-                <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
-                <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
-            </div>
-        </div>
-        
-        <!-- CAROUSEL PRINCIPAL (FEMME) - SECOND -->
-        <div class="carousel-container" style="max-height: 350px; overflow: hidden;">
-            <div class="carousel" style="max-height: 350px;">
-                <img src="carousel-1.jpg" alt="Collier coeur" class="carousel-slide active">
-                <img src="carousel-2.jpg" alt="Collier or" class="carousel-slide">
-                <img src="carousel-3.jpg" alt="Chaîne petit ange" class="carousel-slide">
-                <img src="carousel-4.jpg" alt="Angel pint" class="carousel-slide">
-            </div>
-            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
-            <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
-            <div class="carousel-dots">
-                <span class="dot" onclick="currentSlide(0)"></span>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </div>
+
 
         <p style="font-size: 15px; color: #C9A56B; font-weight: 600; margin: 16px 0; text-align: center;">
             🌟 480€ TTC (au lieu de 550€)
@@ -1088,26 +1000,22 @@ header p {
         </div>
     </section>
 
-    <!-- CAROUSEL ÉTALAGE (LOT) - AVANT PROBLÈME -->
-    <div class="carousel-container-etalage" style="max-width: 600px; margin: 20px auto;">
-        <div class="carousel-etalage">
-            <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
-            <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
-            <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
-            <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
+    <!-- CAROUSEL PRINCIPAL (FEMME) - AVANT PROBLÈME -->
+    <div class="carousel-container" style="max-height: 350px; overflow: hidden; max-width: 800px; margin: 20px auto;">
+        <div class="carousel" style="max-height: 350px;">
+            <img src="carousel-1.jpg" alt="Collier coeur" class="carousel-slide active">
+            <img src="carousel-2.jpg" alt="Collier or" class="carousel-slide">
+            <img src="carousel-3.jpg" alt="Chaîne petit ange" class="carousel-slide">
+            <img src="carousel-4.jpg" alt="Angel pint" class="carousel-slide">
         </div>
-        <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
-        <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
-        <div class="carousel-dots-etalage">
-            <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
-            <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
-            <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
-            <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </div>
-    
-    <div style="text-align: center; margin: 40px 0;">
-        <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je sécurise mon lot à 480€ TTC</a>
     </div>
 
     <!-- SECTION 2 : PROBLÈME -->
@@ -1134,7 +1042,24 @@ header p {
         <p style="margin-bottom: 12px; font-size: 15px;">→ Variété maximale pour plaire à tous vos clients<br/>
         → Pas de stock mort : chaque pièce a son acheteur</p>
 
-
+        <!-- CAROUSEL ETALAGE -->
+        <div style="margin-top: 6px;"></div>
+        <div class="carousel-container-etalage">
+            <div class="carousel-etalage">
+                <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
+                <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
+                <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
+                <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
+            </div>
+            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
+            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
+            <div class="carousel-dots-etalage">
+                <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
+            </div>
+        </div>
 
         <h3 style="text-align: center; color: #333333; font-size: 20px; margin-top: 18px; margin-bottom: 10px;">📋 COMPOSITION (370 PIÈCES)</h3>
         
@@ -1216,6 +1141,11 @@ header p {
         → Finitions soignées, qualité premium</p>
     </section>
 
+    <!-- CTA AVANT CALCUL MARGE -->
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je sécurise mon lot à 480€ TTC</a>
+    </div>
+
     <!-- SECTION 4 : CALCUL MARGE -->
     <section class="marge-section">
         <h2 style="text-align: center;">💰 Votre bénéfice réel sur ce lot</h2> 
@@ -1236,31 +1166,18 @@ header p {
         </a>
     </section>
 
-    <!-- SECTION 4B : LEAD MAGNET -->
-    <section style="background: linear-gradient(135deg, #FFF9E6 0%, #FFFAED 100%); padding: 28px 5%; margin: 20px 0;">
-        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-            <h3 style="font-size: 20px; color: #333333; margin-bottom: 12px;">✨ Pas encore prêt à sécuriser le lot ?</h3>
-            <p style="font-size: 14px; color: #555555; margin-bottom: 16px; line-height: 1.5;">
-                Recevez GRATUITEMENT le Catalogue B2B (59 Références Détaillées + Prix de Revente Conseillés).
-            </p>
-            <a href="mailto:contact@lesbijouxfrancais.fr?subject=Demande%20de%20catalogue%20B2B%20-%20Lot%20Bijoux%20No%C3%ABl" class="cta-button" style="display: inline-block; text-decoration: none;">
-                ✏️ Recevoir le Catalogue B2B par Email
-            </a>
-        </div>
-    </section>
-
     <!-- SECTION 5 : TÉMOIGNAGES -->
     <section>
         <h2>🌟 Ce que disent nos revendeurs</h2>
         
         <div class="testimonial">
             <p style="font-size: 15px; margin-bottom: 8px;">"Stock écoulé en 3 marchés. Excellent investissement."</p>
-            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Gérante de Pop-up Store, Rennes</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Rennes</p>
         </div>
 
         <div class="testimonial">
             <p style="font-size: 15px; margin-bottom: 8px;">"Qualité premium. Mes clients redemandent. Parfait pour la revente."</p>
-            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Propriétaire de Boutique, Lyon</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Lyon</p>
         </div>
 
         <div class="carousel-container-review">
@@ -1296,15 +1213,22 @@ header p {
             </div>
         </div>
 
-        <!-- MINI-SECTION ARCACHON -->
-        <div style="background: #F5F5F5; padding: 16px; border-radius: 10px; margin: 20px auto; max-width: 600px; text-align: center;">
-            <p style="font-size: 13px; color: #333333; margin: 0; font-weight: 600;">🌟 Origine : Arcachon – Créatrice : Les Bijoux de Mimi</p>
-            <p style="font-size: 12px; color: #555555; margin: 8px 0 0 0;">Artisanat français • Acier inoxydable • Dorure premium</p>
+        <div class="testimonial">
+            <p style="font-size: 15px; margin-bottom: 8px;">"Bijoux français : retour rapide. J'en ai commandé 2 lots pour Noël."</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Julie R., Nantes</p>
         </div>
+
+        <img src="f3ff2af4-aaa6-4c02-bfb1-a25cb0d2e9f8.jpg" alt="Cliente heureuse avec collier ancre" class="bijoux-image">
 
         <div style="text-align: center; margin: 40px 0;">
             <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Acheter maintenant</a>
         </div>
+
+        <h3 style="margin-top: 20px; text-align: center;">🏂 Les Bijoux de créateurs Français</h3>
+        <p style="text-align: center; font-size: 15px; color: #555555;">→ SIRET : 943 702 126 00013 | Bassin nantais<br/>
+        → Revendeur : Les Bijoux de Mimi (Arcachon)</p>
+
+        <img src="739bf648-2d8c-4308-bf74-c87b044106be.jpg" alt="Collier coeur sur coussin fleuri" class="bijoux-image">
     </section>
 
     <!-- SECTION 6 : FAQ -->
@@ -1341,20 +1265,53 @@ header p {
             <p class="faq-answer">R : Facture automatique par email.</p>
         </div>
 
+        <div class="faq-item">
+            <p class="faq-question">Q : "Vous fournissez les étiquettes prix ?"</p>
+            <p class="faq-answer">R : Document fourni avec prix et codes références.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q : "Quel est le titrage de la dorure ?"</p>
+            <p class="faq-answer">R : Acier inoxydable + dorure 0,08 µm. Excellente tenue.
+        </div>
+
+        <img src="lotbijux1.jpg" alt="Lot complet de bijoux créateurs français" class="bijoux-image" style="margin-top: 40px;">
+
         <div style="text-align: center; margin: 40px 0;">
             <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je commande maintenant</a>
         </div>
+    </section>
+    <!-- SECTION 7 : URGENCE -->
+    <section style="padding: 19px 5% !important;">
+        <h2 style="font-size: 28px;">⏰ STOCKS LIMITu00c9S</h2>
         
-        <!-- BLOC URGENCE -->
-        <div style="background: linear-gradient(135deg, #FFF9E6 0%, #FFFAED 100%); border: 2px solid #C9A56B; border-radius: 12px; padding: 16px; margin: 20px auto; max-width: 600px; text-align: center;">
-            <p style="font-size: 14px; color: #C9A56B; margin: 0 0 8px 0; font-weight: 600;">⏰ 7 lots disponibles – Mise à jour en temps réel</p>
-            <p style="font-size: 13px; color: #333333; margin: 0;">Offre valable jusqu'à dimanche minuit</p>
-        </div>
-        
-        <img src="Designsanstitre.png" alt="Design sans titre - Bijoux créateurs français" class="bijoux-image" style="margin-top: 40px;">
+        <p style="font-size: 15px; color: #555555; margin-top: 8px; margin-bottom: 8px;">
+            • Lot unique<br/>
+            • Pas de réapprovisionnement avant 2026<br/>
+            • <strong>10-15 lots disponibles</strong>
+        </p>
+
+        <p style="font-size: 15px; font-weight: 600; color: #C9A56B; margin-top: 10px;">
+            ⚡ Noël se prépare. Sécurisez votre lot.
+        </p>
     </section>
 
-
+    <!-- SECTION 7B : PHOTO + URGENCE -->
+    <section style="background: #FFFFFF; padding: 38px 5%; display: flex; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 8px;">
+        <div style="flex: 1; min-width: 300px;">
+            <img src="design-showcase.png" alt="Bijoux en vitrine" style="width: 100%; max-width: 500px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+        </div>
+        
+        <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 14px;">
+                Qualité garantie • Stock qui se vend seul • Marge 88%
+            </p>
+            
+            <p style="font-size: 16px; line-height: 1.6; color: #C9A56B; font-weight: 600; margin-top: 14px;">
+                Vos concurrents se préparent. Soyez prêt.
+            </p>
+        </div>
+    </section>
 
     <!-- SECTION 8 : CTA FINAL -->
     <section class="final-cta">
@@ -1373,7 +1330,7 @@ header p {
         </p>
         
         <p style="font-size: 14px; margin-top: 14px; color: #FFFFFF;">
-            ☏️ Vous préférez discuter avant d'acheter ? Contactez notre expert B2B.
+            Questions ? Contactez-nous :
         </p>
         
         <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
@@ -1409,11 +1366,6 @@ header p {
             <p>SIRET : 943 702 126 00013 | TVA : FR79943702126</p>
         </div>
     </footer>
-
-    <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/33756923323?text=Bonjour%2C%20j%27aimerais%20en%20savoir%20plus%20sur%20le%20lot%20de%20370%20bijoux%20cr%C3%A9ateurs%20fran%C3%A7ais" class="whatsapp-float" title="Contactez-nous sur WhatsApp" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 32px; height: 32px;">
-    </a>
 
     <!-- ZOOM MODAL -->
     <div id="zoomModal" class="zoom-modal">
