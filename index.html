@@ -954,6 +954,37 @@ header p {
     .dot-review.active {
         background: white;
     }
+    /* STICKY WHATSAPP BAR STYLES */
+    .whatsapp-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #25D366; /* WhatsApp Green */
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        padding: 10px 5%;
+        text-align: center;
+        display: none; /* Hidden by default, will be shown on mobile */
+    }
+
+    .whatsapp-bar .cta-button {
+        background: #FFFFFF !important;
+        color: #25D366 !important;
+        font-size: 16px !important;
+        padding: 12px 20px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    @media (max-width: 768px) {
+        .whatsapp-bar {
+            display: block; /* Show on mobile */
+        }
+    }
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -983,7 +1014,7 @@ header p {
 
     <!-- SECTION 1 : HERO -->
     <section class="hero-section">
-        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 20px; margin-top: 0;">370 Bijoux Créateurs Français – +88% de marge immédiate</h1>
+        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 20px; margin-top: 0;">Gagnez +3 597€ avant Noël : Le Lot Clé en Main de 370 Bijoux Créateurs à Marge 88%.</h1>
         
         <p style="font-size: 16px; color: #555555; text-align: center; margin-bottom: 24px; line-height: 1.5;">Lot prêt à vendre pour marchés, boutiques, vide-greniers et pop-ups.</p>
         
@@ -1164,18 +1195,29 @@ header p {
 
     </section>
 
+    <!-- LEAD MAGNET SECTION -->
+    <section style="text-align: center; padding: 30px 5%; background: #F8F6F0; border-top: 2px solid #E8E8E8;">
+        <h3 style="color: #C9A56B; border-bottom: none; margin-bottom: 10px;">✨ Pas encore prêt à sécuriser le lot ?</h3>
+        <p style="font-size: 18px; font-weight: 600; color: #333333; margin-bottom: 20px;">
+            Recevez GRATUITEMENT le Catalogue B2B (59 Références Détaillées + Prix de Revente Conseillés).
+        </p>
+        <a href="mailto:contact@solustoc.fr?subject=Demande%20de%20catalogue%20B2B%20-%20Lot%20Bijoux%20Noël" class="cta-button" style="background: #333333 !important; color: #FFFFFF !important;">
+            ✏️ Recevoir le Catalogue B2B par Email
+        </a>
+    </section>
+
     <!-- SECTION 5 : TÉMOIGNAGES -->
     <section>
         <h2>🌟 Ce que disent nos revendeurs</h2>
         
         <div class="testimonial">
             <p style="font-size: 15px; margin-bottom: 8px;">"Stock écoulé en 3 marchés. Excellent investissement."</p>
-            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Rennes</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Gérante de Pop-up Store, Rennes</p>
         </div>
 
         <div class="testimonial">
             <p style="font-size: 15px; margin-bottom: 8px;">"Qualité premium. Mes clients redemandent. Parfait pour la revente."</p>
-            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Lyon</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Propriétaire de Boutique, Lyon</p>
         </div>
 
         <div class="carousel-container-review">
@@ -1328,7 +1370,7 @@ header p {
         </p>
         
         <p style="font-size: 14px; margin-top: 14px; color: #FFFFFF;">
-            Questions ? Contactez-nous :
+            ☎️ Vous préférez discuter avant d'acheter ? Contactez notre expert B2B.
         </p>
         
         <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
@@ -1622,5 +1664,10 @@ header p {
         });
     });
     </script>
+    <!-- STICKY WHATSAPP BAR -->
+    <div class="whatsapp-bar">
+        <a href="https://wa.me/33756923323" class="cta-button">🟢 Contactez-nous par WhatsApp</a>
+    </div>
+
 </body>
 </html>
