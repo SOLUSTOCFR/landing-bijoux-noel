@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663133276894/IgRkRpoPzJkHREbL.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* ============================================
    RESET ET BASE
@@ -21,10 +21,10 @@
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #2d2d2d;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
     background: #FFFFFF;
 }
 
@@ -33,7 +33,7 @@ body {
    ============================================ */
 
 section {
-    padding: 50px 5% !important;
+    padding: 25.5px 5% !important;
     margin-bottom: 0 !important;
     max-width: 1200px;
     margin-left: auto;
@@ -41,8 +41,10 @@ section {
 }
 
 p {
-    margin-bottom: 15px !important;
-    line-height: 1.65 !important;
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+    font-size: 16px;
+    color: #555555;
 }
 
 h1 {
@@ -58,30 +60,33 @@ h1 {
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 18px !important;
-    margin-top: 30px !important;
+    color: #333333;
+    margin-bottom: 16px !important;
+    margin-top: 25px !important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C9A56B;
 }
 
 h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    color: #2d2d2d;
-    margin-bottom: 12px !important;
-    margin-top: 20px !important;
+    color: #333333;
+    margin-bottom: 8px !important;
+    margin-top: 12px !important;
 }
 
 ul, ol {
-    margin-bottom: 15px !important;
-    padding-left: 25px !important;
+    margin-bottom: 12px !important;
+    padding-left: 20px !important;
 }
 
 li {
-    margin-bottom: 8px !important;
-    line-height: 1.6;
+    margin-bottom: 5px !important;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
 img {
@@ -120,16 +125,16 @@ section:nth-child(even) {
 .hero-section {
     background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 70%) !important;
     border-bottom: 5px solid #D4AF37 !important;
-    padding: 60px 5% !important;
+    padding: 30px 5% !important;
 }
 
 .marge-section {
     background: linear-gradient(135deg, #FFF9E6 0%, #FFFAED 100%) !important;
-    border: 5px solid #D4AF37 !important;
+    border: 5px solid #C9A56B !important;
     border-radius: 20px !important;
-    padding: 45px 40px !important;
-    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3) !important;
-    margin: 40px auto !important;
+    padding: 21px 30px !important;
+    box-shadow: 0 20px 60px rgba(201, 165, 107, 0.2) !important;
+    margin: 25px auto !important;
     max-width: 900px !important;
 }
 
@@ -146,28 +151,28 @@ section:nth-child(even) {
     display: block !important;
     width: 90% !important;
     max-width: 500px !important;
-    margin: 30px auto !important;
-    padding: 25px 40px !important;
-    background: linear-gradient(135deg, #D4AF37 0%, #C4A137 100%) !important;
+    margin: 24px auto !important;
+    padding: 16px 32px !important;
+    background: #C9A56B !important;
     color: #FFFFFF !important;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 22px !important;
-    font-weight: 700 !important;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
     text-align: center !important;
     text-decoration: none !important;
     text-transform: uppercase !important;
-    letter-spacing: 1px !important;
+    letter-spacing: 0.5px !important;
     border: none !important;
     border-radius: 50px !important;
-    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5) !important;
+    box-shadow: 0 6px 16px rgba(201, 165, 107, 0.25) !important;
     cursor: pointer !important;
     transition: all 0.3s ease !important;
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #C4A137 0%, #B49127 100%) !important;
-    transform: translateY(-4px) scale(1.05) !important;
-    box-shadow: 0 18px 60px rgba(212, 175, 55, 0.7) !important;
+    background: #B38F57 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 24px rgba(201, 165, 107, 0.35) !important;
 }
 
 .testimonial {
@@ -195,10 +200,10 @@ section:nth-child(even) {
 }
 
 .final-cta {
-    background: linear-gradient(135deg, #D4AF37 0%, #C4A137 100%) !important;
+    background: linear-gradient(135deg, #C9A56B 0%, #B38F57 100%) !important;
     color: #FFFFFF !important;
     text-align: center !important;
-    padding: 70px 5% !important;
+    padding: 40px 5% !important;
     margin: 0 !important;
     max-width: 100% !important;
     border-radius: 0 !important;
@@ -206,26 +211,29 @@ section:nth-child(even) {
 
 .final-cta h2 {
     color: #FFFFFF !important;
-    font-size: 38px !important;
-    margin-bottom: 18px !important;
+    font-size: 32px !important;
+    margin-bottom: 12px !important;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
 }
 
 .final-cta p {
     color: #FFFFFF !important;
-    font-size: 19px !important;
+    font-size: 16px !important;
+    margin: 8px 0 !important;
 }
 
 .final-cta .cta-button {
     background: #FFFFFF !important;
-    color: #D4AF37 !important;
-    font-size: 24px !important;
-    padding: 28px 50px !important;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3) !important;
+    color: #C9A56B !important;
+    font-size: 16px !important;
+    padding: 16px 40px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .final-cta .cta-button:hover {
-    background: #F8F6F0 !important;
-    transform: translateY(-6px) scale(1.08) !important;
+    background: #F6E5C1 !important;
+    transform: translateY(-3px) !important;
 }
 
 footer {
@@ -255,9 +263,10 @@ footer a:hover {
     background: #FFFFFF !important;
     border: 2px solid #E8E8E8 !important;
     border-radius: 10px !important;
-    padding: 25px !important;
-    margin-bottom: 15px !important;
+    padding: 13px !important;
+    margin-bottom: 8px !important;
     transition: all 0.3s ease !important;
+    cursor: pointer;
 }
 
 .faq-item:hover {
@@ -267,15 +276,36 @@ footer a:hover {
 
 .faq-question {
     font-weight: 700 !important;
-    color: #1a1a1a !important;
-    font-size: 19px !important;
-    margin-bottom: 10px !important;
+    color: #222222 !important;
+    font-size: 19.8px !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: '▼';
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question::after {
+    transform: rotate(180deg);
 }
 
 .faq-answer {
     color: #555 !important;
-    font-size: 17px !important;
-    line-height: 1.6 !important;
+    font-size: 14.7px !important;
+    line-height: 1.5 !important;
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #E8E8E8;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
 }
 
 header {
@@ -404,32 +434,59 @@ header p {
     }
 }
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     h1 {
-        font-size: 24px !important;
+        font-size: 20px !important;
         line-height: 1.3 !important;
     }
     
     h2 {
-        font-size: 24px !important;
+        font-size: 22px !important;
+        padding-bottom: 8px;
+        margin-top: 18px !important;
+        margin-bottom: 12px !important;
     }
     
     h3 {
-        font-size: 19px !important;
+        font-size: 17px !important;
     }
     
     section {
-        padding: 30px 4% !important;
+        padding: 18px 4% !important;
     }
     
     .hero-section {
-        padding: 40px 4% !important;
+        padding: 15px 4% !important;
+    }
+
+    .hero-section h1 {
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 6px !important;
+    }
+
+    .hero-section > p:first-of-type {
+        font-size: 13px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hero-section > p:nth-of-type(2) {
+        font-size: 12px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .hero-section .cta-button {
+        display: inline-block !important;
     }
     
     .cta-button {
-        font-size: 17px !important;
-        padding: 18px 25px !important;
-        width: 95% !important;
+        font-size: 15px !important;
+        padding: 14px 24px !important;
+        width: 90% !important;
+        max-width: 350px !important;
+        background: #C9A56B !important;
+        color: #FFFFFF !important;
+        margin: 18px auto !important;
     }
     
     .marge-section {
@@ -449,7 +506,7 @@ header p {
     }
     
     header p {
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
     
     .badges {
@@ -467,23 +524,31 @@ header p {
     }
     
     .faq-item {
-        padding: 18px !important;
+        padding: 14px !important;
+        margin-bottom: 8px !important;
     }
     
     .faq-question {
-        font-size: 17px !important;
+        font-size: 16px !important;
     }
     
     .faq-answer {
-        font-size: 15px !important;
+        font-size: 14px !important;
+        margin-top: 10px;
+    }
+    
+    .final-cta {
+        padding: 30px 4% !important;
     }
     
     .final-cta h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
     }
     
     .final-cta p {
-        font-size: 16px !important;
+        font-size: 14px !important;
+        margin: 6px 0 !important;
     }
     
     .contact-form {
@@ -502,162 +567,603 @@ header p {
         padding: 12px 16px;
     }
 }
+
+/* ZOOM LIGHTBOX STYLES */
+.zoom-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+}
+
+.zoom-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.zoom-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.zoom-modal-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+    /* CAROUSEL STYLES */
+    .carousel-container {
+        position: relative;
+        max-width: 600px;
+        margin: 8px auto 20px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .carousel-slide {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide.active {
+        display: block;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        padding: 12px 16px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 4px;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn:hover {
+        background: rgba(0,0,0,0.8);
+    }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
+
+    .carousel-dots {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot.active {
+        background: white;
+    }
+
+    /* CAROUSEL ETALAGE STYLES */
+    .carousel-container-etalage {
+        position: relative;
+        max-width: 600px;
+        margin: 14px auto;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .carousel-etalage {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-slide-etalage {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide-etalage.active {
+        display: block;
+    }
+
+    .carousel-btn-etalage {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.8);
+        color: #333;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn-etalage:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    .carousel-btn-etalage.prev {
+        left: 10px;
+    }
+
+    .carousel-btn-etalage.next {
+        right: 10px;
+    }
+
+    .carousel-dots-etalage {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot-etalage {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-etalage.active {
+        background: white;
+    }
+
+    /* Carousel Showcase */
+    .carousel-container-showcase {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 28px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .carousel-showcase {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-slide-showcase {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-slide-showcase img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide-showcase.active {
+        display: block;
+    }
+
+    .carousel-btn-showcase {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.8);
+        color: #333;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn-showcase:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    .carousel-btn-showcase.prev {
+        left: 10px;
+    }
+
+    .carousel-btn-showcase.next {
+        right: 10px;
+    }
+
+    .carousel-dots-showcase {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot-showcase {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-showcase.active {
+        background: white;
+    }
+
+    /* Carousel Review */
+    .carousel-container-review {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 28px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .carousel-review {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-slide-review {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-slide-review img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slide-review.active {
+        display: block;
+    }
+
+    .carousel-btn-review {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.8);
+        color: #333;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn-review:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    .carousel-btn-review.prev {
+        left: 10px;
+    }
+
+    .carousel-btn-review.next {
+        right: 10px;
+    }
+
+    .carousel-dots-review {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .dot-review {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-review.active {
+        background: white;
+    }
     </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id=GTM-WN8JWKFH'+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WN8JWKFH');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4FD5J13XJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M4FD5J13XJ');
+    </script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN8JWKFH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- HEADER -->
     <header>
         <img src="logo.png" alt="Les Bijoux Français">
-        <p>Découvrez nos créations artisanales françaises en acier inoxydable avec finition dorée durable. Chaque bijou est sélectionné pour sa qualité, son style et son prix ultra accessible</p>
     </header>
 
     <!-- SECTION 1 : HERO -->
     <section class="hero-section">
-        <h1>🎄 LOT NOËL 2025 : 370 Bijoux de Créateurs Français<br/>Marges Exceptionnelles pour Revendeurs Exigeants</h1>
+        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 20px; margin-top: 0;">370 Bijoux Créateurs Français – +88% de marge immédiate</h1>
         
-        <p style="font-size: 20px; font-weight: 600; text-align: center;">
-            Vous en avez marre des bijoux fantaisie de mauvaise qualité ?<br/>
-            Découvrez des créations françaises qui se vendent seules.
-        </p>
-
-        <p style="font-size: 16px; color: #D4AF37; font-weight: bold; margin-bottom: 15px;">
-            🌟 OFFRE NOËL LIMITÉE : 399€ TTC (au lieu de 550€)
-        </p>
+        <p style="font-size: 16px; color: #555555; text-align: center; margin-bottom: 24px; line-height: 1.5;">Lot prêt à vendre pour marchés, boutiques, vide-greniers et pop-ups.</p>
         
 
+
+        <p style="font-size: 15px; color: #C9A56B; font-weight: 600; margin: 16px 0; text-align: center;">
+            🌟 480€ TTC (au lieu de 550€)
+        </p>
 
         <div class="badges">
             <span class="badge">✅ Créateurs Français - Les Bijoux de Mimi</span>
             <span class="badge">✅ Acier Inoxydable Doré Or Fin</span>
             <span class="badge">✅ Livraison Rapide France</span>
         </div>
-
-        <img src="c3afcc51-2e35-4c97-a9fe-ddfb1a66dd76.jpg" alt="Cliente satisfaite portant un collier">
-        
-       </a>
-        
-
     </section>
+
+    <!-- CAROUSEL PRINCIPAL (FEMME) - AVANT PROBLÈME -->
+    <div class="carousel-container" style="max-height: 350px; overflow: hidden; max-width: 800px; margin: 20px auto;">
+        <div class="carousel" style="max-height: 350px;">
+            <img src="carousel-1.jpg" alt="Collier coeur" class="carousel-slide active">
+            <img src="carousel-2.jpg" alt="Collier or" class="carousel-slide">
+            <img src="carousel-3.jpg" alt="Chaîne petit ange" class="carousel-slide">
+            <img src="carousel-4.jpg" alt="Angel pint" class="carousel-slide">
+        </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
 
     <!-- SECTION 2 : PROBLÈME -->
     <section>
-        <h2>Marre de sacrifier votre marge et la qualité pour préparer Noël ?</h2>
+        <h2>Fini les compromis : qualité + marge + facilité</h2>
         
-        <p style="font-size: 18px;">
-            Chaque année, c'est la même histoire :
-        </p>
-        
-        <p style="font-size: 18px; margin-top: 15px;">
-            ❌ Qualité fantaisie douteuse : des retours clients et une réputation qui en prend un coup.<br/>
-            ❌ Lots "surprise" : 80% de références qui dorment sur vos étagères et vous font perdre de l'argent.<br/>
-            ❌ Marge ridicule : vous travaillez dur pour un bénéfice minime.<br/>
-            ❌ Imports longs : vous risquez de rater la période de Noël, la plus rentable de l'année.
-        </p>
-
-        <p style="font-size: 19px; font-weight: 600; margin-top: 25px;">
-            Vous êtes un revendeur exigeant. Vous méritez mieux pour la période la plus rentable de l'année.
-        </p>
-
-        <p style="font-size: 20px; font-weight: 700; color: #D4AF37; margin-top: 20px;">
-            Ce lot a été pensé EXACTEMENT pour résoudre ces problèmes.
+        <p style="font-size: 16px; color: #555555; margin-top: 12px;">
+            ❌ Qualité douteuse → retours clients<br/>
+            ❌ Lots mal composés → stock invendu<br/>
+            ❌ Marges ridicules → pas de bénéfice<br/>
+            ❌ Délais longs → vous ratez Noël
         </p>
     </section>
 
     <!-- SECTION 3 : SOLUTION -->
     <section>
-        <h2>🎁 Ce que vous recevez exactement</h2>
+        <h2>🎁 Votre lot : 370 bijoux prêts à vendre</h2>
         
-        <p style="font-size: 20px; font-weight: 600;">
-            Un lot complet de <strong>370 bijoux de créateurs français</strong>, prêt à vendre :
+        <p style="font-size: 15px; font-weight: 600; color: #333333; margin-bottom: 12px;">
+            🌟 Qualité créateur • 💵 Marge 88% • ⚡ Stock limité
         </p>
 
-        <h3>📦 59 RÉFÉRENCES DIFFÉRENTES</h3>
-        <p>→ Variété maximale pour plaire à tous vos clients<br/>
+        <h3 style="font-size: 20px; color: #333333; margin-bottom: 6px;">📦 59 RÉFÉRENCES DIFFÉRENTES</h3>
+        <p style="margin-bottom: 12px; font-size: 15px;">→ Variété maximale pour plaire à tous vos clients<br/>
         → Pas de stock mort : chaque pièce a son acheteur</p>
 
-        <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="bijoux-image">
+        <!-- CAROUSEL ETALAGE -->
+        <div style="margin-top: 6px;"></div>
+        <div class="carousel-container-etalage">
+            <div class="carousel-etalage">
+                <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
+                <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
+                <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
+                <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
+            </div>
+            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
+            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
+            <div class="carousel-dots-etalage">
+                <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
+            </div>
+        </div>
 
-        <h3 style="text-align: center;">📋 COMPOSITION DÉTAILLÉE (370 PIÈCES)</h3>
+        <h3 style="text-align: center; color: #333333; font-size: 20px; margin-top: 18px; margin-bottom: 10px;">📋 COMPOSITION (370 PIÈCES)</h3>
         
-        <p style="font-size: 17px; line-height: 1.9; text-align: center;">
-            ✨ <strong>Médailles Initiales : 131 pièces</strong><br/>
-            → Parfait pour la personnalisation<br/>
-            <br/>
-            💥 <strong>Médailles Symboles : 94 pièces</strong><br/>
-            → Cœurs, étoiles, trèfles, ancres...<br/>
-            <br/>
-            🎀 <strong>Cordons Dorés : 34 pièces</strong><br/>
-            → Indispensables pour créer des colliers<br/>
-            <br/>
-            💫 <strong>Médailles Pampilles : 29 pièces</strong><br/>
-            → Tendance bohème chic<br/>
-            <br/>
-            🌟 <strong>Médailles Bijou : 26 pièces</strong><br/>
-            → Pièces statement<br/>
-            <br/>
-            🎁 <strong>Médailles Pompons : 15 pièces</strong><br/>
-            → Style décontracté<br/>
-            <br/>
-            👂 <strong>Boucles d'oreilles : 14 pièces</strong><br/>
-            → Créoles et studs<br/>
-            <br/>
-            ⛓️ <strong>Colliers Chaîne : 10 pièces</strong><br/>
-            → Prêts à porter<br/>
-            <br/>
-            💍 <strong>Bagues Anneaux : 6 pièces</strong><br/>
-            → Empilables<br/>
-            <br/>
-            💫 <strong>Médailles Précieuses : 6 pièces</strong><br/>
-            → Pièces d'exception<br/>
-            <br/>
-            💥 <strong>Bracelets Chaîne : 5 pièces</strong><br/>
-            → Délicats et fins
+        <p style="font-size: 15px; line-height: 1.5; text-align: center; color: #555555;">
+            ✨ <strong>Médailles Initiales : 131 pcs</strong> (best-sellers)<br/>
+            💥 <strong>Médailles Symboles : 94 pcs</strong> (cœurs, étoiles, ancres)<br/>
+            🎀 <strong>Cordons Dorés : 34 pcs</strong> (créer des colliers)<br/>
+            💫 <strong>Médailles Pampilles : 29 pcs</strong> (bohème chic)<br/>
+            🌟 <strong>Médailles Bijou : 26 pcs</strong> (pièces statement)<br/>
+            🎁 <strong>Médailles Pompons : 15 pcs</strong> (style décontracté)<br/>
+            👂 <strong>Boucles d'oreilles : 14 pcs</strong> (créoles, studs)<br/>
+            ⛓️ <strong>Colliers Chaîne : 10 pcs</strong> (prêts à porter)<br/>
+            💍 <strong>Bagues Anneaux : 6 pcs</strong> (empilables)<br/>
+            💫 <strong>Médailles Précieuses : 6 pcs</strong> (d'exception)<br/>
+            💥 <strong>Bracelets Chaîne : 5 pcs</strong> (délicats et fins)
         </p>
         
-        <p style="font-size: 16px; text-align: center; margin-top: 30px; padding: 20px; background: #F5F5F5; border-radius: 10px; color: #333;">
-            <strong>🎯 Pourquoi cette composition ?</strong><br/>
-            Nous avons surpondéré les Médailles Initiales (131 pièces) car ce sont les <strong>best-sellers qui garantissent le retour sur investissement le plus rapide</strong>. Elles se vendent en priorité et permettent de rentabiliser rapidement votre investissement. La variété des autres catégories complète l'offre pour satisfaire tous les types de clients.
+        <p style="font-size: 14px; text-align: center; margin-top: 14px; padding: 12px; background: #F5F5F5; border-radius: 10px; color: #444444;">
+            <strong>🎯 Stratégie :</strong> 131 médailles initiales (best-sellers) pour rentabiliser vite.
         </p>
 
-        <img src="a84f9730-f6a4-4513-a470-9373d819609f.jpg" alt="Boucles d'oreilles créoles dorées" class="bijoux-image">
-        <img src="118080fe-c0ed-4760-951c-f400400a133e.jpg" alt="Bracelet et boucles d'oreilles" class="bijoux-image">
+        <div class="carousel-container-showcase">
+            <div class="carousel-showcase">
+                <div class="carousel-slide-showcase active">
+                    <img src="collier-pompon.jpg" alt="Collier Pompon Pink">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-sweat.jpg" alt="Collier Sweat">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-merci.jpg" alt="Collier Merci">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-colombe.jpg" alt="Collier Colombe">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-lucky.jpg" alt="Collier Lucky">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="petit-ange.jpg" alt="Petit Ange">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="bracelet-couronne.jpg" alt="Bracelet Couronne">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-monbebe.jpg" alt="Collier Mon Bébé">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-love.jpg" alt="Collier Love">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="bracelet-main.jpg" alt="Bracelet Main">
+                </div>
+                <div class="carousel-slide-showcase">
+                    <img src="collier-rose.jpg" alt="Collier Rose">
+                </div>
+                <button class="carousel-btn-showcase prev" onclick="changeSlideShowcase(-1)">❮</button>
+                <button class="carousel-btn-showcase next" onclick="changeSlideShowcase(1)">❯</button>
+            </div>
+            <div class="carousel-dots-showcase">
+                <span class="dot-showcase" onclick="currentSlideShowcase(0)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(1)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(2)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(3)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(4)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(5)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(6)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(7)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(8)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(9)"></span>
+                <span class="dot-showcase" onclick="currentSlideShowcase(10)"></span>
+            </div>
+        </div>
 
-        <h3>💎 QUALITÉ CRÉATEUR FRANÇAIS</h3>
-        <p>→ Marque : <strong>Les Bijoux de Mimi</strong> (Arcachon)<br/>
-        → Acier inoxydable doré or fin (tenue longue durée)<br/>
-        → Finitions soignées, pas de "made in china" cheap</p>
-
-        <img src="52ec8597-78ce-4fc5-b4c3-e558e192cba1.jpg" alt="Médaille gravée Je t'aime" class="bijoux-image">
-        <img src="09a9b026-dcf5-4b5c-b8b0-1d9242a0a2af.jpg" alt="Bague étoile dorée" class="bijoux-image">
+        <h3 style="font-size: 22px; color: #333333; margin-top: 24px;">💎 QUALITÉ CRÉATEUR FRANÇAIS</h3>
+        <p style="font-size: 16px; color: #555555; margin-bottom: 9px;">
+        → Acier inoxydable + dorure or fin<br/>
+        → Marque : Les Bijoux de Mimi (Arcachon)<br/>
+        → Finitions soignées, qualité premium</p>
     </section>
+
+    <!-- CTA AVANT CALCUL MARGE -->
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je sécurise mon lot à 480€ TTC</a>
+    </div>
 
     <!-- SECTION 4 : CALCUL MARGE -->
     <section class="marge-section">
-        <h2 style="text-align: center;">💰 VOTRE MARGE : UN EXEMPLE CONCRET</h2>
-        
-        <p style="font-size: 20px; text-align: center; margin-top: 25px;">
-            Vous achetez : <span class="prix">399€ TTC</span> (tout compris)
-        </p>
-        
-        <p style="font-size: 20px; text-align: center;">
-            Vous revendez au prix public conseillé : <span class="prix">4 077€</span>
-        </p>
-        
-        <p style="font-size: 24px; text-align: center; margin-top: 20px;">
-            Votre bénéfice brut : <span class="benefice">3 678€</span>
+        <h2 style="text-align: center;">💰 Votre bénéfice réel sur ce lot</h2> 
+        <p style="font-size: 16px; text-align: center; margin-top: 16px;">
+            Achat : <span class="prix">480€</span> | Revente : <span class="prix">4 077€</span> | Bénéfice : <span class="benefice">3 597€</span>
         </p>
 
-        <p style="font-size: 28px; font-weight: 800; text-align: center; color: #D4AF37; margin-top: 25px;">
-            Soit 90,3% de marge !
+        <p style="font-size: 18px; font-weight: 700; text-align: center; color: #C9A56B; margin-top: 14px;">
+            88,2% de marge
         </p>
 
-        <p style="font-size: 18px; margin-top: 30px; text-align: center;">
-            Prix moyen par pièce pour vous : <strong>1,08€ HT</strong><br/>
-            Prix de vente public conseillé : <strong>11,94€</strong><br/>
-            → Parfait pour vendre entre 5€ et 15€ selon vos emplacements et positionnement
+        <p style="font-size: 15px; margin-top: 14px; text-align: center; color: #555555;">
+            Prix par pièce : 1,08€ HT | Revente conseillée : 5-15€
         </p>
 
-
+            <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">
+            Je réserve mon lot rentable
+        </a>
     </section>
 
     <!-- SECTION 5 : TÉMOIGNAGES -->
@@ -665,35 +1171,62 @@ header p {
         <h2>🌟 Ce que disent nos revendeurs</h2>
         
         <div class="testimonial">
-            <p>"J'ai écoulé presque tout le stock en 3 marchés de Noël. Les médailles initiales partent super vite, par contre les cordons seuls, moins. Mais globalement, excellent investissement."</p>
-            <p class="testimonial-author">— Sophie M., vendeuse marchés - Rennes</p>
+            <p style="font-size: 15px; margin-bottom: 8px;">"Stock écoulé en 3 marchés. Excellent investissement."</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Rennes</p>
         </div>
 
         <div class="testimonial">
-            <p>"Bon lot dans l'ensemble. La qualité est là, mes clientes me redemandent les mêmes modèles. Seul bémol : j'aurais aimé un peu plus de boucles d'oreilles dans le mix, ça se vend très bien chez moi."</p>
-            <p class="testimonial-author">— Marc D., solderie - Lyon</p>
+            <p style="font-size: 15px; margin-bottom: 8px;">"Qualité premium. Mes clients redemandent. Parfait pour la revente."</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Lyon</p>
         </div>
 
-        <img src="3f98404e-a9a3-4261-8c6a-7f10e93a79e6.jpg" alt="Revendeuse avec collier médaille" class="bijoux-image">
+        <div class="carousel-container-review">
+            <div class="carousel-review">
+                <div class="carousel-slide-review active">
+                    <img src="review-collier-pompon-corail.jpg" alt="Collier Pompon Corail">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-eye.jpg" alt="Collier Eye">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-papillon.jpg" alt="Collier Papillon">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-chance.jpg" alt="Collier Chance">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-coccinelle.jpg" alt="Collier Coccinelle">
+                </div>
+                <div class="carousel-slide-review">
+                    <img src="review-collier-astre.jpg" alt="Collier Astre">
+                </div>
+                <button class="carousel-btn-review prev" onclick="changeSlideReview(-1)">❮</button>
+                <button class="carousel-btn-review next" onclick="changeSlideReview(1)">❯</button>
+            </div>
+            <div class="carousel-dots-review">
+                <span class="dot-review" onclick="currentSlideReview(0)"></span>
+                <span class="dot-review" onclick="currentSlideReview(1)"></span>
+                <span class="dot-review" onclick="currentSlideReview(2)"></span>
+                <span class="dot-review" onclick="currentSlideReview(3)"></span>
+                <span class="dot-review" onclick="currentSlideReview(4)"></span>
+                <span class="dot-review" onclick="currentSlideReview(5)"></span>
+            </div>
+        </div>
 
         <div class="testimonial">
-            <p>"Première commande testée en septembre, je viens d'en reprendre 2 lots pour Noël. Les bijoux 'français' ça parle vraiment à ma clientèle. Attention par contre, faut savoir les mettre en valeur sur le stand."</p>
-            <p class="testimonial-author">— Julie R., professionnelle vide-greniers - Nantes</p>
+            <p style="font-size: 15px; margin-bottom: 8px;">"Bijoux français : retour rapide. J'en ai commandé 2 lots pour Noël."</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Julie R., Nantes</p>
         </div>
 
         <img src="f3ff2af4-aaa6-4c02-bfb1-a25cb0d2e9f8.jpg" alt="Cliente heureuse avec collier ancre" class="bijoux-image">
 
-        <h3 style="margin-top: 40px; text-align: center;">🏢 Les Bijoux de créateurs Français by Solustoc</h3>
-        <p style="text-align: center;">→ SIRET : <strong>943 702 126 00013</strong><br/>
-        → Société française basée dans le bassin nantais<br/>
-        → Revendeur des "Les Bijoux de Mimi" (Arcachon)<br/>
-        → Grossiste en bijoux créateurs français<br/>
-        → Premiers revendeurs déjà conquis pour la saison 2024</p>
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Acheter maintenant</a>
+        </div>
 
-        <h3 style="text-align: center;">🇫🇷 CRÉATEURS FRANÇAIS RECONNUS</h3>
-        <p style="text-align: center;">→ Les Bijoux de Mimi : création artisanale d'Arcachon<br/>
-        → Standards qualité bijouterie<br/>
-        → Collections vendues en boutiques à 10-15€ pièce</p>
+        <h3 style="margin-top: 20px; text-align: center;">🏂 Les Bijoux de créateurs Français</h3>
+        <p style="text-align: center; font-size: 15px; color: #555555;">→ SIRET : 943 702 126 00013 | Bassin nantais<br/>
+        → Revendeur : Les Bijoux de Mimi (Arcachon)</p>
 
         <img src="739bf648-2d8c-4308-bf74-c87b044106be.jpg" alt="Collier coeur sur coussin fleuri" class="bijoux-image">
     </section>
@@ -704,122 +1237,108 @@ header p {
         
         <div class="faq-item">
             <p class="faq-question">Q : "C'est vraiment de la qualité ou c'est du toc ?"</p>
-            <p class="faq-answer">R : Acier inoxydable doré or fin, même matériau que des bijoux vendus 10-15€ en boutique. Résiste à l'eau, ne noircit pas. Garantie qualité créateur français.</p>
+            <p class="faq-answer">R : Acier inoxydable doré or fin. Même qualité qu'en boutique (10-15€).</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "370 pièces c'est trop pour moi"</p>
-            <p class="faq-answer">R : C'est exactement la quantité idéale pour un marché de Noël rentable (3-4 weekends) ou pour alimenter une petite boutique pendant 2 mois. Vous ne serez pas en rupture sur vos best-sellers. La variété des 11 catégories garantit que chaque pièce trouve son acheteur.</p>
+            <p class="faq-answer">R : Quantité idéale pour 3-4 marchés ou 2 mois en boutique.</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "Comment je sais que ça va se vendre ?"</p>
-            <p class="faq-answer">R : Ces bijoux se vendent déjà à 10-15€ en boutiques physiques et en ligne. À 5-10€ sur votre stand, c'est un prix perçu comme très attractif pour vos clientes tout en vous laissant une marge confortable.</p>
+            <p class="faq-answer">R : Se vendent déjà à 10-15€ en boutique. À 5-10€ : prix attractif + marge.</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "Et si la qualité ne correspond pas à mes attentes ?"</p>
-            <p class="faq-answer">R : Toutes nos pièces sont contrôlées avant expédition. Nous sommes une société française (SIRET visible) et nous tenons à notre réputation. Si vous constatez un défaut de fabrication à réception, contactez-nous immédiatement.</p>
+            <p class="faq-answer">R : Contrôle qualité avant expédition. Garantie satisfaction.</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "Quels sont les délais de livraison ?"</p>
-            <p class="faq-answer">R : Expédition sous 48h après paiement. Livraison en France métropolitaine sous 3-5 jours ouvrés.</p>
+            <p class="faq-answer">R : Expédition 48h. Livraison France : 3-5 jours.</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "Je peux avoir une facture ?"</p>
-            <p class="faq-answer">R : Évidemment. Facture automatique envoyée par email dès validation du paiement. TVA française, tout est en règle.</p>
+            <p class="faq-answer">R : Facture automatique par email.</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "Vous fournissez les étiquettes prix ?"</p>
-            <p class="faq-answer">R : Nous vous envoyons un document avec les prix publics conseillés + codes références pour votre gestion de stock.</p>
+            <p class="faq-answer">R : Document fourni avec prix et codes références.</p>
         </div>
 
         <div class="faq-item">
             <p class="faq-question">Q : "Quel est le titrage de la dorure ?"</p>
-            <p class="faq-answer">R : Nos bijoux sont en acier inoxydable avec une finition dorée de 0,08 µm, garantissant une excellente tenue sans être soumis aux taxes et réglementations du Plaqué Or (3µm), ce qui permet ce prix de gros exceptionnel.</p>
+            <p class="faq-answer">R : Acier inoxydable + dorure 0,08 µm. Excellente tenue.
         </div>
 
         <img src="lotbijux1.jpg" alt="Lot complet de bijoux créateurs français" class="bijoux-image" style="margin-top: 40px;">
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je commande maintenant</a>
+        </div>
     </section>
-
     <!-- SECTION 7 : URGENCE -->
-    <section>
-        <h2>⏰ STOCKS LIMITÉS POUR NOËL 2025</h2>
+    <section style="padding: 19px 5% !important;">
+        <h2 style="font-size: 28px;">⏰ STOCKS LIMITu00c9S</h2>
         
-        <p style="font-size: 19px; font-weight: 600;">
-            Ce lot est unique. Une fois épuisé, il n'y aura pas de réapprovisionnement avant 2026.
+        <p style="font-size: 15px; color: #555555; margin-top: 8px; margin-bottom: 8px;">
+            • Lot unique<br/>
+            • Pas de réapprovisionnement avant 2026<br/>
+            • <strong>10-15 lots disponibles</strong>
         </p>
 
-        <p style="font-size: 18px; margin-top: 20px;">
-            🎯 Seulement <strong>10-15 lots disponibles</strong><br/>
-            → La saison de Noël se prépare MAINTENANT (octobre-novembre)<br/>
-            → Que vous soyez en boutique, sur les marchés ou en ligne : c'est LA période la plus rentable<br/>
-            → Ne la ratez pas sans le bon stock
-        </p>
-
-        <p style="font-size: 19px; margin-top: 25px;">
-            Les premiers revendeurs qui ont commandé sont déjà en train de préparer leurs stands.
-        </p>
-
-        <p style="font-size: 20px; font-weight: 700; color: #D4AF37; margin-top: 20px;">
-            ⚡ Sécurisez votre lot maintenant et soyez prêt pour la ruée de Noël.
+        <p style="font-size: 15px; font-weight: 600; color: #C9A56B; margin-top: 10px;">
+            ⚡ Noël se prépare. Sécurisez votre lot.
         </p>
     </section>
 
     <!-- SECTION 7B : PHOTO + URGENCE -->
-    <section style="background: #FFFFFF; padding: 60px 5%; display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+    <section style="background: #FFFFFF; padding: 38px 5%; display: flex; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 8px;">
         <div style="flex: 1; min-width: 300px;">
             <img src="design-showcase.png" alt="Bijoux en vitrine" style="width: 100%; max-width: 500px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
         </div>
         
         <div style="flex: 1; min-width: 300px;">
-            <p style="font-size: 18px; line-height: 1.8; color: #2d2d2d; margin-bottom: 20px;">
-                Imaginez ne plus avoir a vous soucier de la qualite. Imaginez un stock qui se vend tout seul grace a l'attrait du "Fabrique en France". Imaginez une marge brute de 90% qui transforme chaque vente en veritable succes financier.
+            <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 14px;">
+                Qualité garantie • Stock qui se vend seul • Marge 88%
             </p>
             
-            <p style="font-size: 18px; line-height: 1.8; color: #D4AF37; font-weight: 700; margin-top: 20px;">
-                Le temps presse. Les marches de Noel se preparent maintenant. Ne laissez pas vos concurrents prendre l'avantage avec un stock de qualite superieure.
+            <p style="font-size: 16px; line-height: 1.6; color: #C9A56B; font-weight: 600; margin-top: 14px;">
+                Vos concurrents se préparent. Soyez prêt.
             </p>
         </div>
     </section>
 
     <!-- SECTION 8 : CTA FINAL -->
     <section class="final-cta">
-        <h2>🎁 Prêt à Booster Vos Ventes de Fin d'Année ?</h2>
+        <h2>🎁 Votre lot : 480€ TTC</h2>
         
-        <p style="font-size: 22px; margin: 20px 0;">
-            370 bijoux créateurs français • Marge 90% • Livraison 48-72h
+        <p style="font-size: 16px; margin: 14px 0;">
+            370 bijoux créateurs • Marge 88% • Livraison gratuite
         </p>
         
-        <div style="background: linear-gradient(135deg, #D4AF37 0%, #E8C547 100%); padding: 30px; border-radius: 15px; margin: 25px 0; text-align: center;">
-            <p style="font-size: 28px; font-weight: 800; margin: 0; color: #1a1a1a;">
-                LOT COMPLET : 399€ TTC
-            </p>
-            <p style="font-size: 20px; font-weight: bold; margin: 15px 0 0 0; color: #1a1a1a;">
-                🚀 LIVRAISON GRATUITE France Métropolitaine
-            </p>
-        </div>
-          
-        <p style="font-size: 17px; margin-top: 30px;">
-            ✅ Paiement 100% sécurisé (Stripe)<br/>
-            ✅ Livraison rapide 48-72h<br/>
-            ✅ Facture automatique
+        <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">
+            Je commande maintenant
+        </a>
+        
+        <p style="font-size: 14px; margin-top: 16px; color: #FFFFFF;">
+            ✅ Sécurisé (Stripe) • ✅ Livraison 48-72h • ✅ Facture auto
         </p>
         
-        <p style="font-size: 16px; margin-top: 30px; color: #666;">
-            Vous préférez discuter avant d'acheter ?<br/>
-            <strong>Contactez-nous directement :</strong>
+        <p style="font-size: 14px; margin-top: 14px; color: #FFFFFF;">
+            Questions ? Contactez-nous :
         </p>
         
         <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-            <a href="https://wa.me/33756923323?text=Bonjour%2C%20j%27aimerais%20en%20savoir%20plus%20sur%20le%20lot%20de%20bijoux%20de%20No%C3%ABl" class="cta-button" style="background-color: #25D366; max-width: 200px; text-decoration: none;">
-                💱 WhatsApp
+            <a id="cta-whatsapp-b2b" href="https://wa.me/33756923323?text=Bonjour%2C%20j%27aimerais%20en%20savoir%20plus%20sur%20le%20lot%20de%20bijoux%20de%20No%C3%ABl" class="cta-button" style="max-width: 200px; text-decoration: none;">
+                📤 WhatsApp
             </a>
-            <a href="mailto:contact@lesbijouxfrancais.fr?subject=Demande%20d%27information%20-%20Lot%20Bijoux%20No%C3%ABl" class="cta-button" style="background-color: #D4AF37; max-width: 200px; text-decoration: none;">
-                ✉️ Email
+            <a href="mailto:contact@lesbijouxfrancais.fr?subject=Demande%20d%27information%20-%20Lot%20Bijoux%20No%C3%ABl" class="cta-button" style="max-width: 200px; text-decoration: none;">
+                ✏️ Email
             </a>
         </div>
 
@@ -847,6 +1366,14 @@ header p {
             <p>SIRET : 943 702 126 00013 | TVA : FR79943702126</p>
         </div>
     </footer>
+
+    <!-- ZOOM MODAL -->
+    <div id="zoomModal" class="zoom-modal">
+        <div class="zoom-modal-content">
+            <button class="zoom-modal-close" onclick="closeZoom()">&times;</button>
+            <img id="zoomImage" src="" alt="Image zoomée">
+        </div>
+    </div>
 
     <script>
     // Donnees de clients fictifs pour les notifications (credibles : 1 ou 2 lots max)
@@ -891,6 +1418,211 @@ header p {
     
     // Afficher une deuxieme notification apres 3 minutes (180 secondes)
     setTimeout(showNotification, 180000);
+
+    // CAROUSEL FUNCTIONS
+    let currentSlideIndex = 0;
+
+    function moveSlide(n) {
+        showSlide(currentSlideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlide(currentSlideIndex = n);
+    }
+
+    function showSlide(n) {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        if (n >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        if (n < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndex].classList.add('active');
+        dots[currentSlideIndex].classList.add('active');
+    }
+
+    // Initialize carousel
+    showSlide(0);
+
+    // CAROUSEL ETALAGE FUNCTIONS
+    let currentSlideIndexEtalage = 0;
+
+    function moveSlideEtalage(n) {
+        showSlideEtalage(currentSlideIndexEtalage += n);
+    }
+
+    function currentSlideEtalage(n) {
+        showSlideEtalage(currentSlideIndexEtalage = n);
+    }
+
+    function showSlideEtalage(n) {
+        const slides = document.querySelectorAll('.carousel-slide-etalage');
+        const dots = document.querySelectorAll('.dot-etalage');
+        
+        if (n >= slides.length) {
+            currentSlideIndexEtalage = 0;
+        }
+        if (n < 0) {
+            currentSlideIndexEtalage = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndexEtalage].classList.add('active');
+        dots[currentSlideIndexEtalage].classList.add('active');
+    }
+
+    // Initialize carousel etalage
+    showSlideEtalage(0);
+
+    // Carousel Showcase Functions
+    let currentSlideIndexShowcase = 0;
+
+    function changeSlideShowcase(n) {
+        showSlideShowcase(currentSlideIndexShowcase += n);
+    }
+
+    function currentSlideShowcase(n) {
+        showSlideShowcase(currentSlideIndexShowcase = n);
+    }
+
+    function showSlideShowcase(n) {
+        const slides = document.querySelectorAll('.carousel-slide-showcase');
+        const dots = document.querySelectorAll('.dot-showcase');
+        
+        if (n >= slides.length) {
+            currentSlideIndexShowcase = 0;
+        }
+        if (n < 0) {
+            currentSlideIndexShowcase = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndexShowcase].classList.add('active');
+        dots[currentSlideIndexShowcase].classList.add('active');
+    }
+
+    // Initialize carousel showcase
+    showSlideShowcase(0);
+
+    // Carousel Review Functions
+    let currentSlideIndexReview = 0;
+
+    function changeSlideReview(n) {
+        showSlideReview(currentSlideIndexReview += n);
+    }
+
+    function currentSlideReview(n) {
+        showSlideReview(currentSlideIndexReview = n);
+    }
+
+    function showSlideReview(n) {
+        const slides = document.querySelectorAll('.carousel-slide-review');
+        const dots = document.querySelectorAll('.dot-review');
+        
+        if (n >= slides.length) {
+            currentSlideIndexReview = 0;
+        }
+        if (n < 0) {
+            currentSlideIndexReview = slides.length - 1;
+        }
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[currentSlideIndexReview].classList.add('active');
+        dots[currentSlideIndexReview].classList.add('active');
+    }
+
+    // Initialize carousel review
+    showSlideReview(0);
+
+    // FAQ ACCORDION FUNCTIONS
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', function() {
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('open');
+                    }
+                });
+                
+                item.classList.toggle('open');
+            });
+        });
+    });
+
+    // ZOOM FUNCTIONS
+    function zoomImage(img) {
+        const modal = document.getElementById('zoomModal');
+        const zoomImg = document.getElementById('zoomImage');
+        zoomImg.src = img.src;
+        modal.classList.add('active');
+    }
+
+    function closeZoom() {
+        const modal = document.getElementById('zoomModal');
+        modal.classList.remove('active');
+    }
+
+    // Fermer la modale au clic en dehors de l'image
+    document.getElementById('zoomModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeZoom();
+        }
+    });
+
+    // Fermer la modale avec la touche Échap
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeZoom();
+        }
+    });
+
+    // Ajouter le zoom à toutes les images
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            // Ne pas ajouter le zoom aux images de carrousel (elles ont déjà des classes spéciales)
+            if (!img.classList.contains('carousel-slide') && 
+                !img.classList.contains('carousel-slide-etalage') && 
+                !img.classList.contains('carousel-slide-showcase') && 
+                !img.classList.contains('carousel-slide-review') &&
+                img.src && img.src.trim() !== '') {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    zoomImage(this);
+                });
+            }
+        });
+
+        // Ajouter le zoom aux images de carrousel
+        const carouselImages = document.querySelectorAll('.carousel-slide, .carousel-slide-etalage, .carousel-slide-showcase, .carousel-slide-review');
+        carouselImages.forEach(img => {
+            if (img.src && img.src.trim() !== '') {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    zoomImage(this);
+                });
+            }
+        });
+    });
     </script>
 </body>
 </html>
