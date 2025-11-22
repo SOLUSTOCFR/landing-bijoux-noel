@@ -535,9 +535,7 @@ header p {
             Découvrez des créations françaises qui se vendent seules.
           </p>
 
-          <a href="https://buy.stripe.com/eVq7sE0bc7FO99hfq98EM02" className="cta-button">
-            Je sécurise mon lot à 399€ TTC
-          </a>
+
 
           <div className="badges">
             <span className="badge">✅ Créateurs Français - Les Bijoux de Mimi</span>
@@ -546,6 +544,10 @@ header p {
           </div>
 
           <img src="/c3afcc51-2e35-4c97-a9fe-ddfb1a66dd76.jpg" alt="Cliente satisfaite portant un collier" />
+          
+          <a href="https://buy.stripe.com/eVq7sE0bc7FO99hfq98EM02" className="cta-button">
+            Je sécurise mon lot à 480€ TTC
+          </a>
         </section>
 
         {/* SECTION 2 : PROBLÈME */}
@@ -629,9 +631,7 @@ header p {
             → Parfait pour vendre entre 5€ et 15€ selon vos emplacements et positionnement
           </p>
 
-          <a href="https://buy.stripe.com/eVq7sE0bc7FO99hfq98EM02" className="cta-button">
-            Je veux cette marge
-          </a>
+
         </section>
 
         {/* SECTION 5 : TÉMOIGNAGES */}
