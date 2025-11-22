@@ -1018,7 +1018,7 @@ header p {
 
     <!-- SECTION 1 : HERO -->
     <section class="hero-section">
-        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 16px; margin-top: 0;">370 Bijoux Créateurs Français</h1>
+        <h1 style="font-size: 35px; font-weight: 700; color: #333333; text-align: center; margin-bottom: 16px; margin-top: 0;">Gagnez +3 597€ avant Noël : Le Lot Clé en Main de 370 Bijoux Créateurs à Marge</h1>
         
         <p style="font-size: 16px; color: #555555; text-align: center; margin-bottom: 24px; line-height: 1.5;">Lot prêt à vendre pour marchés, boutiques, vide-greniers et pop-ups.</p>
         
@@ -1041,7 +1041,25 @@ header p {
             <p style="font-size: 13px; color: #C9A56B; margin: 6px 0; font-weight: 600; line-height: 1.4;">📈 Marge brute : 88%</p>
         </div>
         
-        <!-- CAROUSEL -->
+        <!-- CAROUSEL ETALAGE (LOT) - PREMIER -->
+        <div class="carousel-container-etalage">
+            <div class="carousel-etalage">
+                <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
+                <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
+                <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
+                <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
+            </div>
+            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
+            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
+            <div class="carousel-dots-etalage">
+                <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
+                <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
+            </div>
+        </div>
+        
+        <!-- CAROUSEL PRINCIPAL (FEMME) - SECOND -->
         <div class="carousel-container" style="max-height: 350px; overflow: hidden;">
             <div class="carousel" style="max-height: 350px;">
                 <img src="carousel-1.jpg" alt="Collier coeur" class="carousel-slide active">
@@ -1100,24 +1118,7 @@ header p {
         <p style="margin-bottom: 12px; font-size: 15px;">→ Variété maximale pour plaire à tous vos clients<br/>
         → Pas de stock mort : chaque pièce a son acheteur</p>
 
-        <!-- CAROUSEL ETALAGE -->
-        <div style="margin-top: 6px;"></div>
-        <div class="carousel-container-etalage">
-            <div class="carousel-etalage">
-                <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
-                <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
-                <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
-                <img src="etal-3.jpg" alt="Étalage 3" class="carousel-slide-etalage">
-            </div>
-            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
-            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
-            <div class="carousel-dots-etalage">
-                <span class="dot-etalage" onclick="currentSlideEtalage(0)"></span>
-                <span class="dot-etalage" onclick="currentSlideEtalage(1)"></span>
-                <span class="dot-etalage" onclick="currentSlideEtalage(2)"></span>
-                <span class="dot-etalage" onclick="currentSlideEtalage(3)"></span>
-            </div>
-        </div>
+
 
         <h3 style="text-align: center; color: #333333; font-size: 20px; margin-top: 18px; margin-bottom: 10px;">📋 COMPOSITION (370 PIÈCES)</h3>
         
@@ -1219,18 +1220,31 @@ header p {
         </a>
     </section>
 
+    <!-- SECTION 4B : LEAD MAGNET -->
+    <section style="background: linear-gradient(135deg, #FFF9E6 0%, #FFFAED 100%); padding: 28px 5%; margin: 20px 0;">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h3 style="font-size: 20px; color: #333333; margin-bottom: 12px;">✨ Pas encore prêt à sécuriser le lot ?</h3>
+            <p style="font-size: 14px; color: #555555; margin-bottom: 16px; line-height: 1.5;">
+                Recevez GRATUITEMENT le Catalogue B2B (59 Références Détaillées + Prix de Revente Conseillés).
+            </p>
+            <a href="mailto:contact@lesbijouxfrancais.fr?subject=Demande%20de%20catalogue%20B2B%20-%20Lot%20Bijoux%20No%C3%ABl" class="cta-button" style="display: inline-block; text-decoration: none;">
+                ✏️ Recevoir le Catalogue B2B par Email
+            </a>
+        </div>
+    </section>
+
     <!-- SECTION 5 : TÉMOIGNAGES -->
     <section>
         <h2>🌟 Ce que disent nos revendeurs</h2>
         
         <div class="testimonial">
             <p style="font-size: 15px; margin-bottom: 8px;">"Stock écoulé en 3 marchés. Excellent investissement."</p>
-            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Rennes</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Sophie M., Gérante de Pop-up Store, Rennes</p>
         </div>
 
         <div class="testimonial">
             <p style="font-size: 15px; margin-bottom: 8px;">"Qualité premium. Mes clients redemandent. Parfait pour la revente."</p>
-            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Lyon</p>
+            <p class="testimonial-author" style="font-size: 14px;">— Marc D., Propriétaire de Boutique, Lyon</p>
         </div>
 
         <div class="carousel-container-review">
@@ -1320,6 +1334,8 @@ header p {
             <p style="font-size: 14px; color: #C9A56B; margin: 0 0 8px 0; font-weight: 600;">⏰ 7 lots disponibles – Mise à jour en temps réel</p>
             <p style="font-size: 13px; color: #333333; margin: 0;">Offre valable jusqu'à dimanche minuit</p>
         </div>
+        
+        <img src="lotbijux1.jpg" alt="Lot complet de bijoux créateurs français" class="bijoux-image" style="margin-top: 40px;">
     </section>
 
 
@@ -1341,7 +1357,7 @@ header p {
         </p>
         
         <p style="font-size: 14px; margin-top: 14px; color: #FFFFFF;">
-            Questions ? Contactez-nous :
+            ☏️ Vous préférez discuter avant d'acheter ? Contactez notre expert B2B.
         </p>
         
         <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
@@ -1380,7 +1396,7 @@ header p {
 
     <!-- FLOATING WHATSAPP BUTTON -->
     <a href="https://wa.me/33756923323?text=Bonjour%2C%20j%27aimerais%20en%20savoir%20plus%20sur%20le%20lot%20de%20370%20bijoux%20cr%C3%A9ateurs%20fran%C3%A7ais" class="whatsapp-float" title="Contactez-nous sur WhatsApp" target="_blank">
-        💬
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 32px; height: 32px;">
     </a>
 
     <!-- ZOOM MODAL -->
