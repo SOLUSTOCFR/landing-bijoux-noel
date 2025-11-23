@@ -1031,6 +1031,8 @@ header p {
     <div style="margin-top: 6px;"></div>
     <div class="carousel-container-etalage">
         <div class="carousel-etalage">
+            <button class="carousel-btn-etalage prev" onclick="moveSlideEtalage(-1)">❮</button>
+            <button class="carousel-btn-etalage next" onclick="moveSlideEtalage(1)">❯</button>
             <img src="Lotbijoux3.jpg" alt="Assortiment complet du lot" class="carousel-slide-etalage active">
             <img src="etal-1.jpg" alt="Étalage 1" class="carousel-slide-etalage">
             <img src="etal-2.jpg" alt="Étalage 2" class="carousel-slide-etalage">
@@ -1045,6 +1047,9 @@ header p {
         </div>
     </div>
 
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je sécurise mon lot à 480€ TTC</a>
+    </div>
         <div class="badges" style="margin-bottom: 20px;">
             <span class="badge">✅ Créateurs Français - Les Bijoux de Mimi</span>
             <span class="badge">✅ Acier Inoxydable Doré Or Fin</span>
@@ -1076,9 +1081,7 @@ header p {
         → Pas de stock mort : chaque pièce a son acheteur</p>
 
         <!-- CAROUSEL PRINCIPAL (RELOCALISÉ) -->
-        <div style="text-align: center; margin: 20px 0;">
-            <a href="https://buy.stripe.com/7sI5ky9li02U6qccMM" class="cta-button">Je sécurise mon lot à 480€ TTC</a>
-        </div>
+
         <div class="carousel-container" style="max-height: 350px; overflow: hidden; max-width: 800px; margin: 20px auto;">
             <div class="carousel" style="max-height: 350px;">
                 <img src="carousel-1.jpg" alt="Collier coeur" class="carousel-slide active">
@@ -1217,7 +1220,6 @@ header p {
                     <img src="review-collier-coccinelle.jpg" alt="Collier Coccinelle">
 
                     <img src="review-collier-astre.jpg" alt="Collier Astre">
-                </div>
             <button class="carousel-btn-review prev" onclick="changeSlideReview(-1)">❮</button>
             <button class="carousel-btn-review next" onclick="changeSlideReview(1)">❯</button>
         </div>
