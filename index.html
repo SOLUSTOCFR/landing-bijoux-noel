@@ -1006,6 +1006,25 @@ header p {
     max-width: 90%;
     max-height: 90%;
     transition: transform 0.3s ease-out;
+    position: relative; /* Pour positionner le bouton de fermeture */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 10001; /* Au-dessus de tout */
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+    color: #ccc;
 }
 
 .lightbox-content img {
@@ -1716,7 +1735,10 @@ document.querySelectorAll('.faq-item').forEach(item => {
     });
 });
 </script>
-<div id="lightbox" class="lightbox"><img id="lightbox-img" class="lightbox-content"></div>
+<div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -1738,7 +1760,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    lightbox.addEventListener('click', () => {
+    // Fermeture par clic sur le fond noir
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+
+    // Fermeture par clic sur la croix
+    document.getElementById('lightbox-close').addEventListener('click', () => {
         lightbox.style.display = 'none';
     });
 });
